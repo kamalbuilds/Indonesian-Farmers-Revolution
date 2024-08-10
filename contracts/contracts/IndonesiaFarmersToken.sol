@@ -5,19 +5,31 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
- * @notice A Lisk contract that stores farmers tokens as NFTs which will be RWA tokenised
+ * @notice A Lisk contract that stores farmers tokens as NFTs which will be RWA tokenised and manages the supply chain stage
  */
+
 contract IndonesiaFarmersToken is ERC721URIStorage {
+    
+    enum SupplyChainStage {
+        Production,
+        Processing,
+        Distribution,
+        Completed
+    }
+
     struct Params {
         uint investmentAmount;
         address investmentToken;
         address investor;
         uint returnAmount;
         uint returnDate;
+        SupplyChainStage stage;
     }
 
     uint private _nextTokenId;
     mapping(uint tokenId => Params params) private _params;
+
+    event StageUpdated(uint indexed tokenId, SupplyChainStage newStage);
 
     constructor() ERC721("Farmers Token", "FARMT") {}
 
@@ -32,11 +44,12 @@ contract IndonesiaFarmersToken is ERC721URIStorage {
         Params memory params;
         params.investmentAmount = investmentAmount;
         params.investmentToken = investmentToken;
+        params.stage = SupplyChainStage.Production;
         _params[tokenId] = params;
     }
 
     function setURI(uint tokenId, string memory uri) public {
-        require(_ownerOf(tokenId) == msg.sender, "Not owner");
+        require(ownerOf(tokenId) == msg.sender, "Not owner");
         _setTokenURI(tokenId, uri);
     }
 
@@ -64,7 +77,7 @@ contract IndonesiaFarmersToken is ERC721URIStorage {
         require(
             IERC20(_params[tokenId].investmentToken).transferFrom(
                 msg.sender,
-                _ownerOf(tokenId),
+                ownerOf(tokenId),
                 _params[tokenId].investmentAmount
             ),
             "Failed to transfer"
@@ -75,7 +88,7 @@ contract IndonesiaFarmersToken is ERC721URIStorage {
 
     function returnInvestment(uint tokenId, uint returnAmount) public {
         // Check owner
-        require(_ownerOf(tokenId) == msg.sender, "Not owner");
+        require(ownerOf(tokenId) == msg.sender, "Not owner");
         // Check investor
         require(_params[tokenId].investor != address(0), "No investor");
         // Check allowance
@@ -101,6 +114,15 @@ contract IndonesiaFarmersToken is ERC721URIStorage {
         // Update params
         _params[tokenId].returnAmount = returnAmount;
         _params[tokenId].returnDate = block.timestamp;
+        _params[tokenId].stage = SupplyChainStage.Completed;
+        emit StageUpdated(tokenId, SupplyChainStage.Completed);
+    }
+
+    function updateStage(uint tokenId, SupplyChainStage newStage) public {
+        require(ownerOf(tokenId) == msg.sender, "Not owner");
+        require(_params[tokenId].stage != SupplyChainStage.Completed, "Supply chain is already completed");
+        _params[tokenId].stage = newStage;
+        emit StageUpdated(tokenId, newStage);
     }
 
     function getNextTokenId() public view returns (uint nextTokenId) {
@@ -111,5 +133,9 @@ contract IndonesiaFarmersToken is ERC721URIStorage {
         uint tokenId
     ) public view returns (Params memory params) {
         return _params[tokenId];
+    }
+
+    function getCurrentStage(uint tokenId) public view returns (SupplyChainStage) {
+        return _params[tokenId].stage;
     }
 }
