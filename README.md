@@ -2,7 +2,8 @@
 
 Bringing Supply Chain Transparency and investments in Indonesia's Agricultural Sector
 
-Indonesia's agricultural sector faces significant challenges related to supply chain inefficiencies and a lack of transparency. These issues not only affect farmers' livelihoods but also impact consumers and the overall economy. By utilizing Lisk's blockchain technology, a decentralized application (dApp) can be developed to track agricultural products throughout the supply chain, ensuring transparency and fair pricing. This approach can address several critical issues in the agricultural landscape of Indonesia.
+Indonesia's agricultural sector faces significant challenges related to supply chain inefficiencies and a lack of transparency. 
+These issues not only affect farmers' livelihoods but also impact consumers and the overall economy. By utilizing Hedera's blockchain technology, a decentralized application (dApp) can be developed to track agricultural products throughout the supply chain, ensuring transparency and fair pricing. This approach can address several critical issues in the agricultural landscape of Indonesia.
 
 #### Current Challenges in the Agricultural Supply Chain
 
@@ -14,9 +15,9 @@ Indonesia's agricultural sector faces significant challenges related to supply c
 
 4. **Access to Market Information**: Many smallholder farmers lack access to real-time market data, which hinders their ability to make informed decisions about pricing and sales.
 
-#### How Lisk Can Help
+#### How Hedera Can Help
 
-Lisk can facilitate the creation of a decentralized application that addresses these challenges through the following features:
+Hedera can facilitate the creation of a decentralized application that addresses these challenges through the following features:
 
 1. **Product Tracking**: The dApp would enable the tracking of agricultural products from farm to table. Each transaction, including details about the product, its origin, and handling, would be recorded on the blockchain. This creates an immutable record that can be accessed by all stakeholders, including farmers, distributors, and consumers.
 
@@ -30,7 +31,7 @@ Lisk can facilitate the creation of a decentralized application that addresses t
 
 #### Potential Impact
 
-Implementing a decentralized agricultural supply chain platform using Lisk can lead to significant benefits:
+Implementing a decentralized agricultural supply chain platform using Hedera can lead to significant benefits:
 
 - **Empowered Farmers**: With better access to market information and fair pricing, farmers can improve their livelihoods and invest in better farming practices.
 
@@ -42,4 +43,4 @@ Implementing a decentralized agricultural supply chain platform using Lisk can l
 
 ### Conclusion
 
-By leveraging Lisk's blockchain technology, Indonesia can create a transparent and efficient agricultural supply chain that benefits all stakeholders involved. This innovative approach not only addresses existing challenges but also empowers farmers and enhances consumer trust, ultimately contributing to the country's economic development.
+By leveraging Lisk and Hedera's blockchain technology, Indonesia can create a transparent and efficient agricultural supply chain that benefits all stakeholders involved. This innovative approach not only addresses existing challenges but also empowers farmers and enhances consumer trust, ultimately contributing to the country's economic development.

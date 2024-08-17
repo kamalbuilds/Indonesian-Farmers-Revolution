@@ -23,7 +23,7 @@ export function TokenFarmList(props: { contracts: SiteConfigContracts }) {
       return [...new Array(LIMIT)].map(
         (_, i) =>
           ({
-            address: props.contracts.farmersToken,
+            address: props.contracts.RWAfarmersToken,
             abi: FarmersTokenAbi,
             functionName: "ownerOf",
             args: [BigInt(pageParam + i)],

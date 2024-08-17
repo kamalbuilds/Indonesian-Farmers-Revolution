@@ -8,7 +8,7 @@ export default function LandingPage() {
     <div className="container lg:flex-row items-center justify-center gap-6 pb-48 ml-5 pt-6 lg:h-[calc(100vh-4rem)]">
       <div className="upper-text flex items-center justify-center lg:py-0 lg:order-2 py-10 pb-8">
         <h1 className="text-4xl font-extrabold tracking-tighter text-center max-w-[920px] md:text-5xl">
-          Join the Indonesian Farmers Revolution powered by Lisk
+          Join the Indonesian Farmers Revolution powered by Hedera Blockchain
         </h1>                   
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-center w-full py-6">

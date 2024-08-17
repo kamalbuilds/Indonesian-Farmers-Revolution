@@ -115,7 +115,7 @@ export function TokenCreateForm() {
         // TODO: Implement
       } else {
         const txHash = await walletClient.writeContract({
-          address: contracts.farmersToken,
+          address: contracts.RWAfarmersToken,
           abi: FarmersTokenAbi,
           functionName: "create",
           args: [investmentAmount, investmentToken, metadataUri],

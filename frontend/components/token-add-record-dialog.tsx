@@ -86,7 +86,7 @@ export function TokenAddRecordDialog(props: {
         // TODO: Implement
       } else {
         const txHash = await walletClient.writeContract({
-          address: props.contracts.farmersToken,
+          address: props.contracts.RWAfarmersToken,
           abi: FarmersTokenAbi,
           functionName: "setURI",
           args: [BigInt(props.token), metadataUri],

@@ -5,10 +5,10 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
- * @notice A Lisk contract that stores farmers tokens as NFTs which will be RWA tokenised and manages the supply chain stage
+ * @notice Smart contract that stores farmers tokens as NFTs which will be RWA tokenised and manages the supply chain stage
  */
 
-contract IndonesiaFarmersToken is ERC721URIStorage {
+contract RWAFarmersToken is ERC721URIStorage {
     
     enum SupplyChainStage {
         Production,

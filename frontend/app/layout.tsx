@@ -10,12 +10,12 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.description}`,
   description: siteConfig.description,
   icons: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
+const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },

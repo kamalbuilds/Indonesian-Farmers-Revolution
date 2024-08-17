@@ -19,7 +19,7 @@ export function TokenExploreList(props: { contracts: SiteConfigContracts }) {
       return [...new Array(LIMIT)].map(
         (_, i) =>
           ({
-            address: props.contracts.farmersToken,
+            address: props.contracts.RWAfarmersToken,
             abi: FarmersTokenAbi,
             functionName: "getParams",
             args: [BigInt(pageParam + i)],
