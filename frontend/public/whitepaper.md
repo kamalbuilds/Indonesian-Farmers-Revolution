@@ -2,7 +2,8 @@
 **Tokenizing Prosperity for Indonesia's Farmers**  
 *Empowering Smallholders with Real-World Asset (RWA) Tokenization on Lisk L2*
 
-![MakmurTani Logo](/logo.png)
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/4a4ac87a-31a5-4518-9362-f9c5ff579c7e" />
+
 
 **Version**: 1.0  
 **Date**: June 2024  
@@ -1203,32 +1204,31 @@ MakmurTani brings together experts from blockchain technology, agriculture, fina
 
 Our leadership team combines deep expertise across relevant domains:
 
-#### 9.1.1 Executive Leadership
+#### 9.1.1 Technical Team
 
-- **Dr. Surya Wijaya** - CEO & Co-Founder
-  *Ph.D. in Agricultural Economics, 15+ years experience in Indonesian agricultural development, former advisor to Ministry of Agriculture*
+- 2 full-stack developers with blockchain expertise and UX/UI designers focused on rural user experience.
+- 2 smart contract specialists and security researchers
+- 1 data scientists specializing in agricultural modeling
 
-- **Anissa Hartono** - CTO & Co-Founder
-  *MS in Computer Science from MIT, blockchain developer since 2017, previously built payment systems for rural Indonesia*
-
-- **Budi Santoso** - CFO
-  *Former investment banker with 12+ years experience, specializing in agricultural finance and microfinance initiatives*
-
-- **Dr. Dewi Putri** - Chief Agricultural Officer
-  *Agricultural scientist with expertise in sustainable farming practices across Indonesia's diverse regions*
-
-#### 9.1.2 Technical Team
-
-- 12 full-stack developers with blockchain expertise
-- 4 smart contract specialists and security researchers
-- 6 data scientists specializing in agricultural modeling
-- 8 UX/UI designers focused on rural user experience
-
-#### 9.1.3 Agricultural Specialists
+#### 9.1.2 Agricultural Specialists whom we will be onboarding
 
 - 6 regional agricultural experts covering major Indonesian farming regions
 - 4 supply chain specialists with experience in agricultural logistics
 - 3 legal experts in Indonesian land rights and agricultural law
+
+#### 9.1.3 People whom we will be seeking guidance from
+
+- **Dr. Surya Wijaya**
+  *Ph.D. in Agricultural Economics, 15+ years experience in Indonesian agricultural development, former advisor to Ministry of Agriculture*
+
+- **Anissa Hartono**
+  *MS in Computer Science from MIT, blockchain developer since 2017, previously built payment systems for rural Indonesia*
+
+- **Budi Santoso** 
+  *Former investment banker with 12+ years experience, specializing in agricultural finance and microfinance initiatives*
+
+- **Dr. Dewi Putri** - Chief Agricultural Officer
+  *Agricultural scientist with expertise in sustainable farming practices across Indonesia's diverse regions*
 
 ### 9.2 Advisory Board
 
